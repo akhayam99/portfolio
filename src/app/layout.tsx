@@ -1,5 +1,7 @@
+import Sidebar from '@/components/custom/sidebar/sidebar'
 import { Inter } from 'next/font/google'
-import './globals.scss'
+import '../assets/globals.scss'
+import styles from './layout.module.scss'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,7 +15,10 @@ interface RootLayoutProps { children: React.ReactNode }
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} ${styles.page}`}>
+        {children}
+        <Sidebar />
+      </body>
     </html>
   )
 }

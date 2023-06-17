@@ -1,0 +1,10 @@
+.main {
+  height: 100vh;
+  width: 84px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 24px 12px;
+  gap: 10px;
+  box-shadow: 0px 1px 3px rgba(51, 51, 51, 0.12), 0px 1px 2px rgba(51, 51, 51, 0.24);
+}
