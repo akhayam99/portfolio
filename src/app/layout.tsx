@@ -16,8 +16,8 @@ const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en">
       <body className={`${inter.className} ${styles.page}`}>
-        {children}
         <Sidebar />
+        {children}
       </body>
     </html>
   )
