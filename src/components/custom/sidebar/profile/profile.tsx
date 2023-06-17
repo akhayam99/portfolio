@@ -1,8 +1,11 @@
-import Image from "@/components/common/image/image"
+import Image from "@/components/common/image/image";
+import classes from './profile.module.scss';
 
 const Profile = () => {
   return (
-    <Image src="/macho.jpeg" alt='profile' width={80} height={80}></Image>
+    <div className={classes.profile}>
+      <Image src="/macho.jpeg" alt='profile' width={80} height={80}></Image>
+    </div>
   )
 }
 

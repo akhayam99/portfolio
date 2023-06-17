@@ -1,18 +1,31 @@
 import { IconDefinition, faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-interface IContacts { icon: IconDefinition, url: string }
+interface IContacts {
+  icon: IconDefinition,
+  reference: string,
+  isMail: boolean,
+}
 
 export const CONTACTS: IContacts[] = [
   {
     icon: faInstagram,
-    url: 'https://www.instagram.com/_amin_k99_/',
+    reference: 'https://www.instagram.com/_amin_k99_/',
+    isMail: false
   },
   {
     icon: faLinkedin,
-    url: 'https://www.linkedin.com/in/aminkhayam/',
+    reference: 'https://www.linkedin.com/in/aminkhayam/',
+    isMail: false
   },
   {
     icon: faGithub,
-    url: 'https://github.com/akhayam99',
+    reference: 'https://github.com/akhayam99',
+    isMail: false
+  },
+  {
+    icon: faEnvelope,
+    reference: 'aa.khayam99@gmail.com',
+    isMail: true
   }
 ]

@@ -1,7 +1,9 @@
-import { AllowedTheme } from "@/assets/colors/colors";
+import { AllowedTheme, AllowedThemeHex } from "@/assets/colors/colors";
 
 export interface DefaultProps {
   theme?: AllowedTheme
+  themeHex?: AllowedThemeHex
 }
 
-export const defaultTheme: AllowedTheme = 'primary'
+export const dTheme: AllowedTheme = 'primary'
+export const dThemeHex: AllowedThemeHex = 500
