@@ -2,7 +2,7 @@ import Image from "@/components/common/image/image"
 
 const Profile = () => {
   return (
-    <Image src="/macho.jpeg" alt='profile' width={60} height={60}></Image>
+    <Image src="/macho.jpeg" alt='profile' width={80} height={80}></Image>
   )
 }
 
