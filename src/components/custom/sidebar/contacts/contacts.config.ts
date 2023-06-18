@@ -10,22 +10,22 @@ interface IContacts {
 export const CONTACTS: IContacts[] = [
   {
     icon: faInstagram,
-    reference: 'https://www.instagram.com/_amin_k99_/',
+    reference: process.env.INSTAGRAM as string,
     isMail: false
   },
   {
     icon: faLinkedin,
-    reference: 'https://www.linkedin.com/in/aminkhayam/',
+    reference: process.env.LINKEDIN as string,
     isMail: false
   },
   {
     icon: faGithub,
-    reference: 'https://github.com/akhayam99',
+    reference: process.env.GITHUB as string,
     isMail: false
   },
   {
     icon: faEnvelope,
-    reference: 'aa.khayam99@gmail.com',
+    reference: process.env.MAIL as string,
     isMail: true
   }
 ]
