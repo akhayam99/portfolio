@@ -1,4 +1,4 @@
-import Sidebar from '@/components/custom/sidebar/sidebar'
+import Contacts from '@/components/custom/contacts/contacts'
 import { Inter } from 'next/font/google'
 import '../assets/globals.scss'
 import styles from './layout.module.scss'
@@ -12,15 +12,13 @@ export const metadata = {
 
 interface RootLayoutProps { children: React.ReactNode }
 
-const RootLayout = ({ children }: RootLayoutProps) => {
-  return (
-    <html lang="en">
-      <body className={`${inter.className} ${styles.page}`}>
-        <Sidebar />
-        {children}
-      </body>
-    </html>
-  )
-}
+export const RootLayout = ({ children }: RootLayoutProps) => (
+  <html lang="en">
+    <body className={`${inter.className} ${styles.page}`}>
+      <Contacts />
+      {children}
+    </body>
+  </html>
+)
 
 export default RootLayout
