@@ -12,7 +12,7 @@ export const metadata = {
 
 interface RootLayoutProps { children: React.ReactNode }
 
-export const RootLayout = ({ children }: RootLayoutProps) => (
+const RootLayout = ({ children }: RootLayoutProps) => (
   <html lang="en">
     <body className={`${inter.className} ${styles.page}`}>
       <Contacts />
