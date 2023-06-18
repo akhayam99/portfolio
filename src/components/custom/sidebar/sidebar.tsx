@@ -17,7 +17,7 @@ const Sidebar = () => {
   useEffect(() => { !!profileRef.current && setProfileHeight(profileRef.current.offsetHeight) }, [profileRef])
 
   return (
-    <div className={classes.main} style={{ backgroundColor: extractColor('complementary', 150) }}>
+    <div className={classes.main} style={{ backgroundColor: extractColor('secondary', 200) }}>
       <div className={classes.container}>
         <div
           className={classes.line}

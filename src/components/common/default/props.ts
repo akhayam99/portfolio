@@ -1,4 +1,4 @@
-import { AllowedTheme, AllowedThemeHex } from "@/assets/colors/colors";
+import { AllowedTheme, AllowedThemeHex } from "@/assets/colors";
 
 export interface DefaultProps {
   theme?: AllowedTheme

@@ -1,4 +1,4 @@
-import { AllowedTheme, AllowedThemeHex } from '@/assets/colors/colors'
+import { AllowedTheme, AllowedThemeHex } from '@/assets/colors'
 import IconMail from '@/components/common/IconMail/icon-mail'
 import IconLink from '../../../common/IconLink/icon-link'
 import { CONTACTS } from './contacts.config'

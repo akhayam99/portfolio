@@ -3,9 +3,9 @@ import { extractColor } from "@/utils"
 import { faBrush } from "@fortawesome/free-solid-svg-icons"
 import classes from "./introduction.module.scss"
 
-const Introduction = () => {
+const Introduction2 = () => {
   return (
-    <div className={classes.introduction} style={{ backgroundColor: extractColor('primary', 150) }}>
+    <div className={classes.introduction} style={{ backgroundColor: extractColor('complementary', 150) }}>
       <div style={{ color: extractColor('complementary', 50) }}>
         HI<span style={{ color: extractColor('secondary', 200) }}>!</span> MY NAME <span style={{ color: extractColor('complementary', 300) }}>IS</span>
         <br />
@@ -20,4 +20,4 @@ const Introduction = () => {
   )
 }
 
-export default Introduction
+export default Introduction2
