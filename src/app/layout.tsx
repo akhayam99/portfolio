@@ -1,4 +1,3 @@
-import Contacts from '@/modules/contacts/contacts'
 import { Inter } from 'next/font/google'
 import '../assets/globals.scss'
 import styles from './layout.module.scss'
@@ -15,7 +14,7 @@ interface RootLayoutProps { children: React.ReactNode }
 const RootLayout = ({ children }: RootLayoutProps) => (
   <html lang="en">
     <body className={`${inter.className} ${styles.page}`}>
-      <Contacts />
+      {/* <Contacts /> */}
       {children}
     </body>
   </html>
