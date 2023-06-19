@@ -9,18 +9,21 @@ interface IconProps extends DefaultProps {
   size?: number,
 }
 
-const Icon = ({ name, size = 20, theme = dTheme, themeHex = dThemeHex }: IconProps) => {
-  return (
-    <FontAwesomeIcon
-      className={classes.icon}
-      icon={name}
-      style={{
-        color: extractColor(theme, themeHex),
-        height: `${size}px`,
-        width: `${size}px`,
-      }}
-    />
-  )
-}
+const Icon = ({
+  name,
+  size = 20,
+  theme = dTheme,
+  themeHex = dThemeHex,
+}: IconProps) => (
+  <FontAwesomeIcon
+    className={classes.icon}
+    icon={name}
+    style={{
+      color: extractColor(theme, themeHex),
+      height: `${size}px`,
+      width: `${size}px`,
+    }}
+  />
+)
 
 export default Icon

@@ -7,12 +7,21 @@ interface IconLinkProps extends DefaultProps {
   url: string
 }
 
-const IconLink = ({ icon, url, theme = dTheme, themeHex = dThemeHex }: IconLinkProps) => {
-  return (
-    <a href={url} target="_blank">
-      <Icon name={icon} size={24} theme={theme} themeHex={themeHex} />
-    </a>
-  )
-}
+const IconLink = ({
+  icon,
+  theme = dTheme,
+  themeHex = dThemeHex,
+  url,
+}: IconLinkProps) => (
+  <a href={url} target="_blank">
+    <Icon
+      name={icon}
+      size={24}
+      theme={theme}
+      themeHex={themeHex}
+    />
+  </a>
+)
+
 
 export default IconLink

@@ -5,17 +5,22 @@ import classes from "./image.module.scss"
 
 interface ImageProps extends DefaultProps { src: string, alt: string, width?: number, height?: number }
 
-const Image = ({ src, alt, width = 40, height = 40, theme = dTheme, themeHex = dThemeHex }: ImageProps) => {
-  return (
-    <NextImage
-      alt={alt}
-      className={classes.image}
-      height={height}
-      src={src}
-      width={width}
-      style={{ borderColor: extractColor(theme, themeHex) }}
-    />
-  )
-}
+const Image = ({
+  src,
+  alt,
+  width = 40,
+  height = 40,
+  theme = dTheme,
+  themeHex = dThemeHex
+}: ImageProps) => (
+  <NextImage
+    alt={alt}
+    className={classes.image}
+    height={height}
+    src={src}
+    width={width}
+    style={{ borderColor: extractColor(theme, themeHex) }}
+  />
+)
 
 export default Image
