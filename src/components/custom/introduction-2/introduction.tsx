@@ -5,7 +5,7 @@ import classes from "./introduction.module.scss"
 
 const Introduction2 = () => {
   return (
-    <div className={classes.introduction} style={{ backgroundColor: extractColor('complementary', 150) }}>
+    <div className={classes.introduction} style={{ backgroundColor: extractColor('complementary', 150), scrollSnapAlign: 'start' }}>
       <div style={{ color: extractColor('complementary', 50) }}>
         HI<span style={{ color: extractColor('secondary', 200) }}>!</span> MY NAME <span style={{ color: extractColor('complementary', 300) }}>IS</span>
         <br />
