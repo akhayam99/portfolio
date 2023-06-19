@@ -1,3 +1,5 @@
+'use client'
+
 import Footer from "@/components/custom/footer/footer";
 import Introduction2 from "@/components/custom/introduction-2/introduction";
 import Introduction from "@/components/custom/introduction/introduction";

@@ -1,15 +1,11 @@
 'use client'
 
-import { AllowedTheme, AllowedThemeHex } from '@/assets/colors'
 import IconMail from '@/components/common/IconMail/icon-mail'
 import { extractColor } from '@/utils'
 import { useEffect, useRef, useState } from 'react'
 import IconLink from '../../common/IconLink/icon-link'
 import { CONTACTS } from './contacts.config'
 import classes from './contacts.module.scss'
-
-const theme: AllowedTheme = 'primary'
-const themeHex: AllowedThemeHex = 500
 
 const Contacts = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -32,14 +28,10 @@ const Contacts = () => {
         ? <IconMail
           key={key}
           mail={contact.reference}
-          theme={theme}
-          themeHex={themeHex}
         />
         : <IconLink
           icon={contact.icon}
           key={key}
-          theme={theme}
-          themeHex={themeHex}
           url={contact.reference}
         />
       )}

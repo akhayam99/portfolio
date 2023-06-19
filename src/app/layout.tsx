@@ -1,4 +1,5 @@
 import Contacts from '@/components/custom/contacts/contacts'
+import { ThemeProvider } from '@/utils/theme-context'
 import { Inter } from 'next/font/google'
 import '../assets/globals.scss'
 import styles from './layout.module.scss'
@@ -13,12 +14,14 @@ export const metadata = {
 interface RootLayoutProps { children: React.ReactNode }
 
 const RootLayout = ({ children }: RootLayoutProps) => (
-  <html lang="en">
-    <body className={`${inter.className} ${styles.page}`}>
-      <Contacts />
-      {children}
-    </body>
-  </html>
+  <ThemeProvider theme={'primary'} hex={500}>
+    <html lang="en">
+      <body className={`${inter.className} ${styles.page}`}>
+        <Contacts />
+        {children}
+      </body>
+    </html>
+  </ThemeProvider>
 )
 
 export default RootLayout
