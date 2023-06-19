@@ -12,9 +12,9 @@ const Introduction = () => {
         <span style={{ color: extractColor('primary', 500) }}>A</span>MIN <span style={{ color: extractColor('primary', 500) }}>K</span>HAYAM
       </div>
       <div style={{ fontSize: '20px', display: 'flex', gap: '40px', marginTop: '40px', }}>
-        <Icon name={faBrush}></Icon>
+        <Icon name={faBrush} />
         <span style={{ color: extractColor('primary', 350) }}> WORK IN PROGRESS </span>
-        <Icon name={faBrush}></Icon>
+        <Icon name={faBrush} />
       </div>
     </div >
   )

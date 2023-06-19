@@ -19,7 +19,7 @@ const Icon = ({ name, size = 20, theme = dTheme, themeHex = dThemeHex }: IconPro
         height: `${size}px`,
         width: `${size}px`,
       }}
-    ></FontAwesomeIcon>
+    />
   )
 }
 

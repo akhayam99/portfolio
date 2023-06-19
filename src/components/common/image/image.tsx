@@ -14,7 +14,7 @@ const Image = ({ src, alt, width = 40, height = 40, theme = dTheme, themeHex = d
       src={src}
       width={width}
       style={{ borderColor: extractColor(theme, themeHex) }}
-    ></NextImage>
+    />
   )
 }
 

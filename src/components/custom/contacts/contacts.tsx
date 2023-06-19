@@ -34,14 +34,14 @@ const Contacts = () => {
           mail={contact.reference}
           theme={theme}
           themeHex={themeHex}
-        ></IconMail>
+        />
         : <IconLink
           icon={contact.icon}
           key={key}
           theme={theme}
           themeHex={themeHex}
           url={contact.reference}
-        ></IconLink>
+        />
       )}
     </div>
   )
