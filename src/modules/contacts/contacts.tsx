@@ -1,10 +1,10 @@
 'use client'
 
 import { AllowedTheme, AllowedThemeHex } from '@/assets/colors'
-import IconMail from '@/components/common/IconMail/icon-mail'
+import IconMail from '@/components/IconMail/icon-mail'
 import { extractColor } from '@/utils'
 import { useEffect, useRef, useState } from 'react'
-import IconLink from '../../common/IconLink/icon-link'
+import IconLink from '../../components/IconLink/icon-link'
 import { CONTACTS } from './contacts.config'
 import classes from './contacts.module.scss'
 

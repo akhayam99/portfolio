@@ -1,6 +1,4 @@
-import Icon from "@/components/common/icon/icon"
 import { extractColor } from "@/utils"
-import { faBrush } from "@fortawesome/free-solid-svg-icons"
 import classes from "./introduction.module.scss"
 
 const Introduction2 = () => {
@@ -11,10 +9,8 @@ const Introduction2 = () => {
         <br />
         <span style={{ color: extractColor('primary', 500) }}>A</span>MIN <span style={{ color: extractColor('primary', 500) }}>K</span>HAYAM
       </div>
-      <div style={{ fontSize: '20px', display: 'flex', gap: '40px', marginTop: '40px', }}>
-        <Icon name={faBrush} />
-        <span style={{ color: extractColor('primary', 350) }}> WORK IN PROGRESS </span>
-        <Icon name={faBrush} />
+      <div style={{ display: 'flex', gap: '40px', marginTop: '40px', }}>
+        <span style={{ color: extractColor('primary', 350) }}> WIP </span>
       </div>
     </div >
   )

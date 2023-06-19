@@ -1,4 +1,4 @@
-import Contacts from '@/components/custom/contacts/contacts'
+import Contacts from '@/modules/contacts/contacts'
 import { Inter } from 'next/font/google'
 import '../assets/globals.scss'
 import styles from './layout.module.scss'

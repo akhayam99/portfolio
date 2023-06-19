@@ -1,4 +1,4 @@
-import Image from "@/components/common/image/image";
+import Image from "@/components/image/image";
 import classes from './profile.module.scss';
 
 const Profile = () => {

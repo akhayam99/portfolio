@@ -1,6 +1,6 @@
-import Footer from "@/components/custom/footer/footer";
-import Introduction2 from "@/components/custom/introduction-2/introduction";
-import Introduction from "@/components/custom/introduction/introduction";
+import Footer from "@/modules/footer/footer";
+import Introduction2 from "@/modules/introduction-2/introduction";
+import Introduction from "@/modules/introduction/introduction";
 
 export default function Home() {
   return (
