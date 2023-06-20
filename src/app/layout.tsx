@@ -14,7 +14,7 @@ export const metadata = {
 interface RootLayoutProps { children: React.ReactNode }
 
 const RootLayout = ({ children }: RootLayoutProps) => (
-  <ThemeProvider theme={'primary'} hex={500}>
+  <ThemeProvider theme='light'>
     <html lang="en">
       <body className={`${inter.className} ${styles.page}`}>
         <Contacts />

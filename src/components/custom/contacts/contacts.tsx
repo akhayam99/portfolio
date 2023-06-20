@@ -33,6 +33,7 @@ const Contacts = () => {
           icon={contact.icon}
           key={key}
           url={contact.reference}
+          pippo='primary'
         />
       )}
     </div>

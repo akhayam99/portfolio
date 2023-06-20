@@ -1,21 +1,16 @@
 'use client'
 
-import { AllowedTheme, AllowedThemeHex } from "@/assets/colors";
 import { ReactNode, createContext, useContext } from "react";
 
 interface IThemeContext {
-  theme: AllowedTheme
-  hex: AllowedThemeHex
+  theme: 'dark' | 'light'
 }
 
-const ThemeContext = createContext<IThemeContext>({ theme: 'primary', hex: 500 })
+const ThemeContext = createContext<IThemeContext>({ theme: 'light' })
 
-export const ThemeProvider = ({ children, theme, hex }: IThemeContext & { children: ReactNode }) => {
+export const ThemeProvider = ({ children, theme }: IThemeContext & { children: ReactNode }) => {
   return (
-    <ThemeContext.Provider value={{
-      theme,
-      hex,
-    }}>
+    <ThemeContext.Provider value={{ theme }}>
       {children}
     </ThemeContext.Provider>
   )

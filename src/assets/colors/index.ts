@@ -12,3 +12,12 @@ export const THEMES: { [key: string]: { [key: number]: string } }[] = [
     secondary: SECONDARY,
   },
 ]
+
+
+export const THEMES_DARK: { [key: string]: { [key: number]: string } }[] = [
+  {
+    primary: COMPLEMENTARY,
+    complementary: PRIMARY,
+    secondary: SECONDARY,
+  },
+]
