@@ -5,8 +5,8 @@ import IconMail from '@/components/IconMail/icon-mail'
 import { extractColor } from '@/utils'
 import { useEffect, useRef, useState } from 'react'
 import IconLink from '../../components/IconLink/icon-link'
-import { CONTACTS } from './contacts.config'
 import classes from './contacts.module.scss'
+import { CONTACTS } from '@/data/contacts.config'
 
 const theme: AllowedTheme = 'primary'
 const themeHex: AllowedThemeHex = 500

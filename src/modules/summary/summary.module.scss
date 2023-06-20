@@ -1,0 +1,21 @@
+.summary {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  height: calc(100vh - 100px);
+  justify-content: center;
+  padding: 50px;
+  width: 100%;
+}
+
+.segmentedControl {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  border: 1px solid blue;
+}
+
+.selected {
+  color: red;
+}

@@ -1,0 +1,8 @@
+.option {
+  background-color: black;
+
+  &.selected {
+    background-color: white !important;
+    color: black;
+  }
+}

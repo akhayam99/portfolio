@@ -10,13 +10,8 @@ const Introduction = () => {
           <br />
           NAME <span style={{ color: extractColor('complementary', 500) }}>IS</span>
           <br />
-          <span style={{ color: extractColor('secondary', 500) }}>A</span>MIN <span style={{ color: extractColor('secondary', 500) }}>K</span>HAYAM
+          <span style={{ color: extractColor('secondary', 500) }}>A</span>MIN  <span style={{ color: extractColor('secondary', 500) }}>K</span>HAYAM
         </h1>
-      </div>
-      <div className={classes.contacts} style={{ color: extractColor('primary', 200) }}>
-        <h2 className={classes.h2}> DEVELOPER </h2>
-        <h2 className={classes.h2}> REFEREE </h2>
-        <h2 className={classes.h2}> VIDEOGAMER </h2>
       </div>
     </div >
   )
