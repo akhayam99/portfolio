@@ -1,8 +1,10 @@
 .option {
-  background-color: black;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  padding: 4px 8px;
 
   &.selected {
-    background-color: white !important;
     color: black;
   }
 }

@@ -16,18 +16,18 @@ const Summary = () => {
   return (
     <div
       className={classes.summary}
-      style={{ backgroundColor: extractColor('secondary', 500) }}
+      style={{
+        backgroundColor: extractColor(value === 'developer' ? 'secondary' : value === 'referee' ? 'complementary' : 'primary', 150),
+        transition: 'all .3s'
+      }}
     >
-      <div className={classes.segmentedControl}>
-        {OPTIONS.map((option, key) => (
-          <SegmentedControl
-            key={key}
-            label={option.label}
-            onChange={onChange}
-            selected={option.value === value}
-          ></SegmentedControl>
-        ))}
-      </div>
+      <SegmentedControl
+        onChange={onChange}
+        options={OPTIONS}
+        theme={value === 'developer' ? 'secondary' : value === 'referee' ? 'complementary' : 'primary'}
+        themeHex={500}
+        value={value}
+      ></SegmentedControl>
     </div >
   )
 }

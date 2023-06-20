@@ -8,7 +8,7 @@ const Contacts = () => {
   return (
     <div
       className={classes.contacts}
-      style={{ backgroundColor: extractColor('primary', 50) }}
+      style={{ backgroundColor: extractColor('primary', 500) }}
     >
       {
         CONTACTS.map((contact, key) => contact.isMail
@@ -16,12 +16,14 @@ const Contacts = () => {
             key={key}
             mail={contact.reference}
             theme={'primary'}
+            themeHex={50}
           />
           : <IconLink
             icon={contact.icon}
             key={key}
             url={contact.reference}
             theme={'primary'}
+            themeHex={50}
           />
         )
       }

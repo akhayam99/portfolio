@@ -1,8 +1,13 @@
-.option {
-  background-color: black;
+.segmentedControl {
+  display: flex;
+  gap: 2px;
+  padding: 2px;
+  border-radius: 4px;
+}
 
-  &.selected {
-    background-color: white !important;
-    color: black;
-  }
+.animate {
+  background-color: white;
+  border-radius: 4px;
+  position: absolute;
+  transition: all .3s;
 }

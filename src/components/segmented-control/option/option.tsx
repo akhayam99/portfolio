@@ -1,9 +1,9 @@
 import { DefaultProps, dTheme, dThemeHex } from "../../default/props";
-import classes from "./segmented-control.module.scss";
+import classes from "./option.module.scss";
 
 interface OptionProps extends DefaultProps {
   label: string,
-  onClick: () => {},
+  onClick: () => void,
   selected: boolean,
 }
 
@@ -18,6 +18,7 @@ const Option = ({
       ${classes.option}
       ${selected ? classes.selected : ''}
     `}
+    onClick={onClick}
   >
     {label}
   </div>

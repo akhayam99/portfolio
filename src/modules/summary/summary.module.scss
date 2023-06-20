@@ -4,18 +4,8 @@
   flex-direction: column;
   gap: 100px;
   height: calc(100vh - 100px);
-  justify-content: center;
+  justify-content: start;
   padding: 50px;
+  position: relative;
   width: 100%;
-}
-
-.segmentedControl {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  border: 1px solid blue;
-}
-
-.selected {
-  color: red;
 }
